@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="他とは違うセルフケアを紹介">
+  <meta name="description" content="他とは違うヘルスケアを紹介">
   <title>Test site</title>
   <link rel="icon" href="sロゴ.jpg">
 </head>
@@ -90,8 +90,60 @@
       <p>薄毛改善中に発見した手法です。</p>
       <p>投稿日：<time>2024-8-31 16:00</time> 投稿者：Inoue</p>
     </article>
-
   </section>
+  <form>
+    <div>
+      <label for="name">お名前</label>
+      <input type="text" id="name" placeholder="例）井上">
+    </div>
+    <div>
+      <label for="name">パスワード <input type="password"></label>
+    </div>
+    <div>
+      <label for="name">数量<input type="number"></label>
+    </div>
+    <div>
+      <label for="name">日付<input type="date"></label>
+    </div>
+    <div>
+      <fieldset>
+        <legend>対象の商品</legend>
+        <label><input type="checkbox">商品A</label>
+        <label><input type="checkbox">商品B</label>
+        <label><input type="checkbox">商品C</label>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>延長保証</legend>
+        <label><input type="radio" name="warranty">加入済</label>
+        <label><input type="radio" name="warranty">未加入</label>
+        <label><input type="radio" name="warranty">検討中</label>
+      </fieldset>
+    </div>
+    <div>
+      <label>
+        種別
+        <select size="3">
+          <option>--お問い合わせ種別を選択してください--</option>
+          <option>商品が届かない</option>
+          <option>商品が壊れた</option>
+          <option>誤発注した</option>
+          <option>決済手段を変えたい</option>
+          <option>その他</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label for="opinion">
+        ご意見
+      </label>
+       <textarea id="opinion" placeholder="例）詳しい資料をほしい"></textarea>
+    </div>
+   <div>
+    <button disabled="dissabled">送信</button>
+   </div>
+  </form>
   <footer><small>(c) supriup.com</small></footer>
 </div>
   
