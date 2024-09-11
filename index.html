@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="他とは違うヘルスケアを紹介">
   <title>Test site</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="sロゴ.jpg">
 </head>
 
@@ -15,7 +16,7 @@
     <h1>Web site lessons</h1>
   </header>
 
-  <p>ウェブプログラミングを練習しています。ようやく完成です！</p>
+  <p>ウェブプログラミングを練習しています。ようやく<a href="">リンク</a><a href="">リンク</a>完成です！</p>
 <div style="margin-left:40px;">
   <nav>
     <h2>目次</h2>
@@ -86,7 +87,7 @@
   <section>
     <h2>お知らせ</h2>
     <article>
-      <h3>完治不能の皮膚病の改善実施中</h3>
+      <h3>完治不能な皮膚病の改善実施中</h3>
       <p>薄毛改善中に発見した手法です。</p>
       <p>投稿日：<time>2024-8-31 16:00</time> 投稿者：Inoue</p>
     </article>
@@ -95,6 +96,7 @@
     <div>
       <label for="name">お名前</label>
       <input type="text" id="name" placeholder="例）井上">
+      <input type="text" value="例）山田太郎">
     </div>
     <div>
       <label for="name">パスワード <input type="password"></label>
@@ -108,23 +110,24 @@
     <div>
       <fieldset>
         <legend>対象の商品</legend>
-        <label><input type="checkbox">商品A</label>
+        <label><input type="checkbox" checked>商品A</label>
         <label><input type="checkbox">商品B</label>
         <label><input type="checkbox">商品C</label>
+        
       </fieldset>
     </div>
     <div>
       <fieldset>
         <legend>延長保証</legend>
         <label><input type="radio" name="warranty">加入済</label>
-        <label><input type="radio" name="warranty">未加入</label>
+        <label><input type="radio" name="warranty" checked>未加入</label>
         <label><input type="radio" name="warranty">検討中</label>
       </fieldset>
     </div>
     <div>
       <label>
         種別
-        <select size="3">
+        <select size="3" multiple>
           <option>--お問い合わせ種別を選択してください--</option>
           <option>商品が届かない</option>
           <option>商品が壊れた</option>
@@ -142,8 +145,21 @@
     </div>
    <div>
     <button disabled="dissabled">送信</button>
+    <!-- <input type="submit" value="送信"> -->
    </div>
   </form>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <div class="container">
+    <div class="box-1">Box 1</div>
+    <div class="box-2">セール中</div>
+    <div class="box-3">Box 3</div>
+  </div>
+
   <footer><small>(c) supriup.com</small></footer>
 </div>
   
